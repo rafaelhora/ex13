@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define vezes 10000
+#define vezes 1000
 #define debug 0
 
 int main(void)
