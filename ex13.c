@@ -33,13 +33,15 @@ int main(void)
 		
 		if(debug) printf("Porta aberta = %d |",j );
 
-		while(1)// A segunda escolha nao pode ser uma porta "aberta" e tem que ser diferente da primeira
+		/*while(1)// A segunda escolha nao pode ser uma porta "aberta" e tem que ser diferente da primeira
 		{
 			seg = rand() % 3;
 			if(seg != j && seg != esc)
 				break;
 		}
-		if(debug) printf("Segunda esc = %d \n", seg);
+		if(debug) printf("Segunda esc = %d \n", seg);*/
+		
+		seg = esc;
 
 		if(p[seg])// se a porta tem valor "verdadeiro" aumenta em 1 o numero de vitorias
 			vit++;
