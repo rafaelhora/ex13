@@ -10,9 +10,7 @@ int main(void)
 	int vit, //numero de vitorias	
 		j,i,// variavel auxiliar
 		pri, seg; //primeira e segunda escolha do convidado
-	
 	srand(time(NULL));
-
 	for(int cont = 0 ; cont < vezes ; cont++)
 	{	
 		int p[3] = {0};//as portas a serem escolhidas
@@ -23,7 +21,6 @@ int main(void)
 
 		pri = rand() % 3;// indica a primeira escolha do convidado 
 		if(debug) printf("Escolha: %d |", pri);
-
 		while(1) // "abre" uma porta que nao foi escolhida e que nao possui o premio
 		{
 			j = rand() % 3;
@@ -31,9 +28,7 @@ int main(void)
 				break;
 		}	
 		if(debug) printf("Porta aberta = %d |\n",j );
-
 		seg = pri;//a escolha da porta nao eh trocada
-
 		if(p[seg])// se a porta tem valor "verdadeiro" aumenta em 1 o numero de vitorias
 			vit++;
 	}
