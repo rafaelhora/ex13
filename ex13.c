@@ -3,7 +3,7 @@
 #include<time.h>
 
 #define vezes 1000
-#define debug 0
+#define debug 1
 
 int main(void)
 {
@@ -31,7 +31,7 @@ int main(void)
 				break;
 		}
 		
-		if(debug) printf("Porta aberta = %d |",j );
+		if(debug) printf("Porta aberta = %d |\n",j );
 
 		seg = pri;
 
