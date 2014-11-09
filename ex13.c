@@ -3,7 +3,7 @@
 #include<time.h>
 
 #define vezes 1000
-#define debug 1
+#define debug 0
 
 int main(void)
 {
@@ -29,11 +29,10 @@ int main(void)
 			j = rand() % 3;
 			if(p[j] != 1 && j != pri)
 				break;
-		}
-		
+		}	
 		if(debug) printf("Porta aberta = %d |\n",j );
 
-		seg = pri;
+		seg = pri;//a escolha da porta nao eh trocada
 
 		if(p[seg])// se a porta tem valor "verdadeiro" aumenta em 1 o numero de vitorias
 			vit++;
