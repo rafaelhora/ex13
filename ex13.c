@@ -33,7 +33,7 @@ int main(void)
 		
 		if(debug) printf("Porta aberta = %d |",j );
 
-		pri = seg;
+		seg = pri;
 
 		if(p[seg])// se a porta tem valor "verdadeiro" aumenta em 1 o numero de vitorias
 			vit++;
